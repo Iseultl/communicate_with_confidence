@@ -1,0 +1,136 @@
+:root {
+  --primary: #fbaa29;     /* orange background */
+  --secondary: #fff8f0;   /* light cream background */
+  --text: #333;           /* dark text */
+  --accent:  #018288;      /* dark teal accent */
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: 'Montserrat', sans-serif;
+  color: var(--text);
+  line-height: 1.6;
+}
+
+/* HEADER */
+.site-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  background: white;
+  border-bottom: 1px solid #eee;
+}
+
+.logo {
+  height: 50px;
+}
+
+nav a {
+  margin-left: 1.5rem;
+  text-decoration: none;
+  color: var(--text);
+  font-weight: 500;
+}
+
+nav a:hover {
+  color: var(--primary);
+}
+
+/* HERO */
+.hero {
+  padding: 5rem 2rem;
+  background: var(--secondary);
+  text-align: center;
+}
+
+.hero h1 {
+  font-size: 3rem;
+  color: var(--primary);
+}
+
+.button {
+  display: inline-block;
+  margin-top: 1.5rem;
+  padding: 0.75rem 1.5rem;
+  background: var(--accent);
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+/* SECTIONS */
+.section {
+  padding: 4rem 2rem;
+  max-width: 900px;
+  margin: auto;
+}
+
+.section.alt {
+  background: var(--secondary);
+}
+
+/* SERVICES */
+.services {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+  list-style: none;
+  padding: 0;
+}
+
+/* TESTIMONIALS */
+blockquote {
+  margin: 2rem 0;
+  padding-left: 1rem;
+  border-left: 4px solid var(--primary);
+}
+
+blockquote span {
+  display: block;
+  margin-top: 0.5rem;
+  font-size: 0.9rem;
+  color: #666;
+}
+
+/* FOOTER */
+footer {
+  text-align: center;
+  padding: 2rem;
+  font-size: 0.9rem;
+  background: #f0f0f0;
+}
+
+
+.about-content {
+  display: flex;
+  align-items: flex-start;
+  gap: 2rem;
+}
+
+.about-text {
+  flex: 1;
+}
+
+.about-photo {
+  width: 200px;
+  max-width: 40%;
+  height: auto;
+  border: 6px solid var(--accent);
+  border-radius: 8px;
+}
+
+@media (max-width: 800px) {
+  .about-content {
+    flex-direction: column;
+  }
+  .about-photo {
+    width: 220px;
+    max-width: 100%;
+  }
+}
+
