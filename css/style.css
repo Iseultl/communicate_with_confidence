@@ -83,6 +83,75 @@ nav a:hover {
   padding: 0;
 }
 
+.quote-heading {
+  text-align: center;
+  font-size: 1.8rem;
+  line-height: 1.8;
+  margin-bottom: 3rem;
+  color: var(--accent);
+  font-style: italic;
+}
+
+.services-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2.5rem;
+  margin-bottom: 3rem;
+}
+
+.services-column {
+  padding: 1.5rem;
+}
+
+.services-column h3 {
+  color: var(--accent);
+  font-size: 1.3rem;
+  margin-bottom: 1rem;
+  margin-top: 0;
+}
+
+.service-list,
+.benefits-list,
+.audience-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.service-list li,
+.benefits-list li,
+.audience-list li {
+  padding: 0.6rem 0;
+  padding-left: 1.5rem;
+  position: relative;
+  line-height: 1.6;
+}
+
+.service-list li:before,
+.benefits-list li:before,
+.audience-list li:before {
+  content: "•";
+  color: var(--primary);
+  font-weight: bold;
+  display: absolute;
+  left: 0;
+  font-size: 1.2rem;
+}
+
+.services-column p {
+  margin-bottom: 1rem;
+  line-height: 1.7;
+}
+
+.quote-closing {
+  text-align: center;
+  font-size: 1.2rem;
+  line-height: 1.8;
+  margin-top: 2rem;
+  color: var(--accent);
+  font-style: italic;
+}
+
 /* TESTIMONIALS */
 blockquote {
   margin: 2rem 0;
@@ -242,6 +311,23 @@ footer {
 
   .workshop-card {
     padding: 1.5rem;
+  }
+
+  .services-grid {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+
+  .services-column {
+    padding: 1rem;
+  }
+
+  .quote-heading {
+    font-size: 1.3rem;
+  }
+
+  .quote-closing {
+    font-size: 1rem;
   }
 }
 
